@@ -25,11 +25,9 @@
 
 
 import ReactDOM from "react-dom";
-import GifApp from "./GifApp";
 // import PrimeraApp from "./PrimeraApp";
-// import CounterApp from "./CounterApp";
+import CounterApp from "./CounterApp";
 import "./index.css";
-
 
 // const saludo = <h1>Hola mundo</h1>;
 
@@ -37,7 +35,7 @@ import "./index.css";
 
 const divRoot = document.querySelector("#root");
 
-// console.log(divRoot);
+console.log(divRoot);
 
 // ReactDOM.render(<PrimeraApp saludo={'Helo mke'} />, divRoot);
-ReactDOM.render(<GifApp />, divRoot);
+ReactDOM.render(<CounterApp value={152} />, divRoot);
