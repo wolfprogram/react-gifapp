@@ -1,43 +1,12 @@
-// const active = true;
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-// // let mensaje = '';
+import { GifExpertApp } from './GifExpertApp';
 
-// // if ( !active ) {
-// //     mensaje = 'Inactive';
-// // }else {
-// //     mensaje = 'Active';
-// // }
+import './index.css';
 
-// // console.log(mensaje);
+ReactDOM.render(
+  <GifExpertApp />,
+  document.getElementById('root')
+);
 
-// // const mensaje = ( active === true ) ? 'Active' : 'Inactive';
-// // const mensaje = ( active ) ? 'Active' : 'Inactive';
-
-// // when yoou only wanna return true 
-// // const mensaje = ( active ) ? 'Active' : null;
-// const mensaje = ( active ) && 'Active';
-// //******Explain with and in Javascript  if firts is flase all is false*/
-// console.log(false && 'hola mundo');  // false
-// console.log(true && 'hola mundo');   // hola mundo
-
-
-// console.log(mensaje);
-
-
-import ReactDOM from "react-dom";
-import GifApp from "./GifApp";
-// import PrimeraApp from "./PrimeraApp";
-// import CounterApp from "./CounterApp";
-import "./index.css";
-
-
-// const saludo = <h1>Hola mundo</h1>;
-
-// console.log(saludo);
-
-const divRoot = document.querySelector("#root");
-
-// console.log(divRoot);
-
-// ReactDOM.render(<PrimeraApp saludo={'Helo mke'} />, divRoot);
-ReactDOM.render(<GifApp />, divRoot);
